@@ -28,8 +28,6 @@ def identifyNum(s):
 def dealImg(f):
     im = Image.open("img/%s"%f)
     w,h = im.size
-    om = Image.new('RGB',(w,h),(255,255,255))
-    draw = ImageDraw.Draw(om)
 
     start = False
     code = ""
